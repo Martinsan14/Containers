@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTf-8">
+    <meta name="descripción" content="Practice 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet">
+    <title>Forum</title>
+</head>
+
+<body>
+    <section>
+        <h1 class="des" id="title">Survey Form</h1>
+        <p class="des" id="description">This is a form for a freecodecamp course.</p>
+    </section>
+
+    <section class="quest">
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name</label>
+                <input required id="name" type="text" placeholder="Enter your name">
+
+                <label id="email-label" for="email">Email</label>
+                <input required id="email" type="email" placeholder="Enter your email">
+
+                <label id="number-label" for="number">Number</label>
+                <input required id="number" type="number" min="0" max="9999999999"
+                    placeholder="Enter your phone number">
+
+                <label>Which option best describes you?</label>
+                <select id="dropdown">
+                    <option>(Select one)</option>
+                    <option>I am a hard working person</option>
+                    <option>I am not a hard working person</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label>If you were on a bad situation, what would you do?</label>
+                <label for="op1"><input class="inline" id="op1" name="op1" type="radio" value="op2"> I would call my mom</label>
+                <label for="op2"><input class="inline" id="op2" name="op1" type="radio" value="op2"> I would call cry</label>
+
+                <label>Which job would you prefer?</label>
+                <label for="ch1"><input class="inline" id="ch1" name="ch1" value="ch" type="checkbox"> Cooker</label>
+                <label for="ch2"><input class="inline" id="ch2" name="ch2" value="ch" type="checkbox"> Hooker</label>
+                <label for="ch3"><input class="inline" id="ch3" name="ch3" value="ch" type="checkbox"> soccer Player</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Provide more information:</label>
+                <textarea id="texta" name="texta" rows="3" cols="30" placeholder="Write your information here.."></textarea>
+            </fieldset>
+            
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+    </section>
+
+</body>
+
+</html>
